@@ -20,7 +20,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         setupLocationManager()
         // Do any additional setup after loading the view, typically from a nib.
         mapView.showsUserLocation = true
-        
+        mapView.setUserTrackingMode(MKUserTrackingMode.follow, animated: true)
         addGesture()
         
     }
